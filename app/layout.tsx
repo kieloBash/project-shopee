@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Twin Queen Agency",
-  description: "Travel Agency by TwinQueen",
+  title: "Liz Inventory - Shopee",
+  description: "Shopee Invoice",
 };
 
 export default function RootLayout({
