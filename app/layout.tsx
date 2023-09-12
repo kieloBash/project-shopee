@@ -1,9 +1,6 @@
-import AuthProvider from "@/components/providers/AuthProvider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import Navbar from "@/components/global/Navbar";
-import Sidebar from "@/components/global/Sidebar";
 import { SidebarProvider } from "@/components/contexts/SidebarContext";
 
 const poppins = Poppins({
@@ -27,13 +24,7 @@ export default function RootLayout({
         <body
           className={`${poppins.className} flex min-h-screen bg-accent-100`}
         >
-          <Sidebar />
-          <div className="flex-1 flex flex-col">
-            <Navbar />
-            <div className="w-full flex-1">
-              <AuthProvider>{children}</AuthProvider>
-            </div>
-          </div>
+          {children}
         </body>
       </SidebarProvider>
     </html>

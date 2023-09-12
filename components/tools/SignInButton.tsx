@@ -8,7 +8,7 @@ const SignInButton = () => {
     <Button
       className="w-full max-w-md"
       textSize={"lg"}
-      onClick={() => void signIn("google")}
+      onClick={() => void signIn("google", { callbackUrl: "/dashboard" })}
     >
       Sign In
     </Button>
