@@ -14,7 +14,7 @@ export default withAuth(
       (pathname.startsWith("/dashboard") && user?.role === null) ||
       user?.role === "no role"
     ) {
-      return NextResponse.redirect("http://localhost:3000");
+      return NextResponse.redirect(origin);
     }
   },
   {
