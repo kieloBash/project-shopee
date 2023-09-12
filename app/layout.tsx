@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} flex min-h-screen`}>
+      <body className={`${poppins.className} flex min-h-screen bg-accent-100`}>
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>

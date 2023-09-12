@@ -8,4 +8,4 @@ export interface UserType {
   createdAt: Date;
 }
 
-export type UserRoles = "user" | "admin";
+export type UserRoles = "packer" | "admin" | "no role";
